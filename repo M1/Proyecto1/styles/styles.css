@@ -1,73 +1,61 @@
-#titulo2{
-    color: black;
-    text-decoration: underline;
-}
+h1 {
+    color: rgb(34, 78, 155);
+    font-size:70px ;
+    margin-left: 50px ;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+ }
 
-#titulo{
-    color: crimson;
+h2{
+    color: rgb(15, 175, 175);
+    font-size: 30px;
 }
-
+#titulo {
+    color: blue;
+}
 .tituloh2{
-    color: darkgreen;
+    color: blueviolet;
 }
-.tituloh2:hover{
-    font-size: 50px;
-}
-.contenedor-de-secciones{
-    background-color: rgb(20, 94, 255);
+
+ header {
+    background-color: rgb(176, 158, 220);
+    width: 300px;
+
+ }
+ main{
+    background-color: rgb(239, 209, 173);
+ }
+ footer{
+    background-color: rgb(218, 205, 230);
+ }
+ body {
+    background-color: black;
+ }
+
+.contenedordesecciones{
+    background-color: green;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.seccion-1{
-    background-color: blue;
+.seccion1 {
+    background-color: greenyellow;
     display: flex;
     flex-direction: column;
     align-items: center;
-     }
-.seccion-2{
-    background-color: chartreuse;
+}
+.seccion2{
+    background-color: lightgreen;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
-    border-radius: 55px;
-    
-}
-.seccion-2:hover{
-    background-color: red;
-    transition: 4s;
-    
+    border-radius: 20px;
+
 }
 
-
-h1, h2, p {
-    color: aquamarine;
-   
-}
-
-p{
-   color: aqua;
-}
-
-header {
-    background-color: chocolate;
-    width: 300px;
-    
-}
-main{
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-
-
-footer{
-    background-color: darkgreen;
-}
-body{
-    background-color: goldenrod;
+.seccion2:hover{
+    background-color: lightcoral;
 }
