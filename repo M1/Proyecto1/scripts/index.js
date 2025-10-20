@@ -62,9 +62,15 @@ function handlerAgregarActividad(event) {
     const descripcion = document.getElementById("descripcion").value;
     const imgUrl = document.getElementById("url").value;
 
-    if (!nombre || !descripcion || !imgUrl) {
-        alert("Por favor completa todos los campos");
-        return;
+    if (!nombre.trim() || !descripcion.trim() || !imgUrl.trim()) {
+    alert("Por favor completa todos los campos");
+    return;
+    }
+
+    const esUrlValida = /^https?:\/\/.*\.(jpg|jpeg|png|gif|webp)$/i.test(imgUrl.trim());
+    if (!esUrlValida) {
+    alert("Por favor ingresa una URL de imagen válida (jpg, png, gif, etc.)");
+    return;
     }
 
     const nuevaActividad = new Activity(nombre, descripcion, imgUrl);
